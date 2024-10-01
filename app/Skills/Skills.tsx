@@ -75,7 +75,7 @@ export default function Skills() {
     }, []);
 
     return (
-        <div className='flex items-center justify-between pt-60' id='skills' data-aos="fade-up"
+        <div className='flex flex-col sm:flex-row items-center justify-between pt-40 sm:pt-60' id='skills' data-aos="fade-up"
             data-aos-offset="-150"
             data-aos-delay="50"
             data-aos-duration="1000"
@@ -83,7 +83,7 @@ export default function Skills() {
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
-            <div className="text-6xl font-bold text-white/60 flex flex-col gap-10">
+            <div className="text-5xl sm:text-6xl font-bold text-white/60 flex flex-col gap-10">
                 <div>Development Stack</div>
 
                 {/* Skill Type Selection */}
@@ -115,7 +115,7 @@ export default function Skills() {
             </div>
 
             {/* Icon Cloud Display */}
-            <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden bg-[#161925] px-20 pb-20 pt-8 ">
+            <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden bg-[#161925] sm:px-20 sm:pb-20 pt-8 ">
                 <IconCloud iconSlugs={slugs} />
             </div>
         </div>

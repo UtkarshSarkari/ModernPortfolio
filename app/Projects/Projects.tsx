@@ -94,7 +94,7 @@ export default function Projects() {
             {numbers.map((num) => (
               <div
                 key={num}
-                className={`px-7 sm:px-8 py-2 rounded-lg cursor-pointer transition-all z-10 font-semibold shadow-2xl text-sm sm:text-base
+                className={`px-6 sm:px-8 py-2 rounded-lg cursor-pointer transition-all z-10 font-semibold shadow-2xl text-sm sm:text-base
                   ${selected === num
                     ? 'bg-gradient-to-r from-purple-600 to-blue-400 text-white transition-all'
                     : 'bg-purple-300 text-black hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-300 transition-all'

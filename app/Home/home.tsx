@@ -12,7 +12,7 @@ export default function Home() {
         <BackgroundLines className='py-10 sm:py-60 flex items-center justify-center flex-col gap-10 sm:gap-16'>
             <div className="flex flex-col">
                 <GradualSpacing
-                    className="hidden sm:flex font-display text-center text-4xl font-bold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
+                    className="hidden sm:flex font-display text-center text-4xl font-bold tracking-[-0.06em] text-white/70 md:text-7xl md:leading-[5rem] z-50 text-wrap
                     "
                     text="Converting Thoughts Into Code."
                 />
@@ -35,7 +35,7 @@ export default function Home() {
                 <div className="font-extrabold text-5xl tracking-wide leading-[60px] text-transparent bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text sm:hidden">Converting Thoughts Into Code</div>
             </div>
             <FadeText
-                className="text-xl text-white italic sm:text-center flex z-50 font-extrabold"
+                className="text-xl text-white italic sm:text-center flex z-50 font-extrabold sm:font-light"
                 direction="up"
                 framerProps={{
                     show: { transition: { delay: 1.6, duration: 1 } },

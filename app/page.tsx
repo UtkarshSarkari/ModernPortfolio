@@ -4,7 +4,7 @@ import Home from './Home/home'
 import Experience from './Experience/experience'
 import Projects from './Projects/Projects'
 import { Review } from './Reviews/Review'
-// import Skills from './Skills/Skills'
+import Skills from './Skills/Skills'
 import Contact from './Contact/Contact'
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
       <Experience />
       {/* <Quote quote='“Programmer: A machine that turns coffee into code.”' /> */}
       <Projects />
-      {/* <Skills /> */}
+      <Skills />
       <Review />
       <Contact />
     </div>
