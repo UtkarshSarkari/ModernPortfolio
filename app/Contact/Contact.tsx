@@ -7,7 +7,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 export default function Contact() {
     return (
         <div className='flex items-center justify-center gap-20'>
-            <div className="hidden">
+            <div className="hidden sm:flex">
                 <img className='h-[400px] opacity-30' src="/assets/contact.png" alt="" />
             </div>
             <div className="w-screen overflow-hidden">
@@ -37,7 +37,7 @@ export default function Contact() {
                         </div>
                     </motion.div>
                 </div>
-                <div className="mt-10 flex flex-col gap-8">
+                <div className="mt-10 flex flex-col gap-8 items-center justify-center">
                     <form action="" className='flex flex-col gap-4'>
                         <div className="flex items-center gap-4">
                             <input className='bg-white/10 px-4 py-2 rounded-md' type="text" placeholder='Your Name' />
@@ -45,7 +45,7 @@ export default function Contact() {
                         </div>
                         <textarea className='bg-white/10 resize-none rounded-md px-4 py-3' placeholder='Your Message 💬' rows={8} name="" id=""></textarea>
                     </form>
-                    <button className='bg-gradient-to-r from-purple-500 to-blue-400 py-2 rounded-md'>Submit</button>
+                    <button className='bg-gradient-to-r from-purple-500 to-blue-400 py-2 rounded-md w-[440px]'>Submit</button>
                 </div>
             </div>
         </div>

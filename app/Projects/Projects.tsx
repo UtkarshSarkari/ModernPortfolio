@@ -159,8 +159,8 @@ export default function Projects() {
                 </div>
                 <div className="py-10 flex flex-wrap gap-x-8 gap-y-8 items-center justify-center">
                   {
-                    selectedProject.features.map((feature) => (
-                      <div className="flex items-center gap-2">{feature.icon}{feature.title}</div>
+                    selectedProject.features.map((feature,index) => (
+                      <div key={index} className="flex items-center gap-2">{feature.icon}{feature.title}</div>
                     ))
                   }
                 </div>
