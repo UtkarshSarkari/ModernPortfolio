@@ -18,17 +18,17 @@ export default function Home() {
                 />
                 {/* <div className="font-bold text-6xl text-center leading-[70px] tracking-wide bg-gradient-to-r from-purple-400 to-blue-200 bg-clip-text text-transparent">Converting Thoughts Into Code</div> */}
                 <GradualSpacing
-                    className="font-display text-center text-5xl font-bold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
+                    className="font-display text-center text-5xl font-extrabold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
                     "
                     text="Converting"
                 />
                 <GradualSpacing
-                    className="font-display text-center text-5xl font-bold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
+                    className="font-display text-center text-5xl font-extrabold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
                     "
                     text="Thoughts"
                 />
                 <GradualSpacing
-                    className="font-display text-center text-5xl font-bold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
+                    className="font-display text-center text-5xl font-extrabold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
                     "
                     text="Into Code"
                 />
