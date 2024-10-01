@@ -16,7 +16,7 @@ export default function Home() {
                     "
                     text="Converting Thoughts Into Code."
                 />
-                <div className="font-bold text-5xl text-center leading-[60px] tracking-wide bg-gradient-to-r from-purple-400 to-blue-200 bg-clip-text text-transparent">Converting Thoughts Into Code</div>
+                <div className="font-bold text-6xl text-center leading-[70px] tracking-wide bg-gradient-to-r from-purple-400 to-blue-200 bg-clip-text text-transparent">Converting Thoughts Into Code</div>
             </div>
             <FadeText
                 className="text-xl text-white italic text-center flex z-50"
