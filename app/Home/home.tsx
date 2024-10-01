@@ -3,12 +3,7 @@ import GradualSpacing from "@/components/magicui/gradual-spacing";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { FadeText } from "@/components/magicui/fade-text";
 import { BackgroundLines } from "@/components/ui/background-lines";
-import { cn } from "@/lib/utils";
-import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
-// import { motion } from "framer-motion"
 import * as motion from "framer-motion/client"
-import NumberTicker from "@/components/magicui/number-ticker";
-import BlurIn from '@/components/magicui/blur-in';
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
