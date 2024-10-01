@@ -34,7 +34,7 @@ export default function Home() {
                 />
             </div>
             <FadeText
-                className="text-xl text-white italic text-center flex z-50"
+                className="text-xl text-white italic text-center flex z-50 font-extrabold"
                 direction="up"
                 framerProps={{
                     show: { transition: { delay: 1.6, duration: 1 } },
