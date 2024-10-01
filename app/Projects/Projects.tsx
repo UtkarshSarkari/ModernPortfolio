@@ -38,7 +38,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="relative pt-20" data-aos="fade-up" id='projects'>
+    <div className="relative sm:pt-20" data-aos="fade-up" id='projects'>
       {/* Background Boxes */}
       <div className="absolute inset-0 grid grid-cols-5 gap-6">
         {/* You can add more boxes here and adjust the number of columns */}
@@ -68,7 +68,7 @@ export default function Projects() {
 
         {/* <div className="absolute -rotate-90 top-80 -left-80 text-9xl font-bold tracking-widest z-10 opacity-50">PROJECTS</div> */}
 
-        <div className="relative">
+        <div className="relative -mt-40">
           <div className="relative w-full flex items-center justify-center">
             <Safari url="magicui.design" className="w-[350px] sm:w-[900px]" />
             <div
@@ -90,11 +90,11 @@ export default function Projects() {
 
         {/* Number Selection */}
         <div className="flex items-center justify-center gap-10">
-          <div className="flex items-center justify-center sm:gap-10 -mt-10">
+          <div className="flex items-center justify-center gap-4 sm:gap-10 -mt-96 sm:-mt-10">
             {numbers.map((num) => (
               <div
                 key={num}
-                className={`px-8 py-2 rounded-lg cursor-pointer transition-all z-10 font-semibold shadow-2xl
+                className={`px-7 sm:px-8 py-2 rounded-lg cursor-pointer transition-all z-10 font-semibold shadow-2xl text-sm sm:text-base
                   ${selected === num
                     ? 'bg-gradient-to-r from-purple-600 to-blue-400 text-white transition-all'
                     : 'bg-purple-300 text-black hover:bg-gradient-to-r hover:from-purple-400 hover:to-blue-300 transition-all'
@@ -107,7 +107,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="mt-10 flex items-center justify-center">
+        <div className="-mt-32 sm:mt-10 flex items-center justify-center">
           <Modal>
             <ModalTrigger className="bg-white text-black flex justify-center group/modal-btn tracking-widest">
               <span className="group-hover/modal-btn:translate-x-96 text-center transition duration-500 tracking-widest">
