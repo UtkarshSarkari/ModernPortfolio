@@ -161,7 +161,7 @@ export default function Experience() {
                 ) : null}
             </AnimatePresence>
             <ul className="max-w-5xl mx-auto w-full gap-4 mt-20">
-                {cards.map((card, index) => (
+                {cards.map((card) => (
                     <motion.div
                         layoutId={`card-${card.title}-${id}`}
                         key={`card-${card.title}-${id}`}

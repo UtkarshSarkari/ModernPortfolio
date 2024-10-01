@@ -13,7 +13,7 @@ export default function Header() {
                 <ul className='flex gap-16 text-white/90 bg-white/20 z-50 px-5 py-3 rounded-md'>
                     {
                         menuData.map((item) => (
-                            <li key={item.name}><a href={item.url} className={`tracking-wider cursor-pointer z-50  px-4 py-1 rounded-md transition-all ${selectedMenu == item.name ? "bg-white/40" : ""}`} onClick={(e) => { setSelectedMenu(item.name) }}>{item.name}</a></li>
+                            <li key={item.name}><a href={item.url} className={`tracking-wider cursor-pointer z-50  px-4 py-1 rounded-md transition-all ${selectedMenu == item.name ? "bg-white/40" : ""}`} onClick={() => { setSelectedMenu(item.name) }}>{item.name}</a></li>
                         ))
                     }
                 </ul>

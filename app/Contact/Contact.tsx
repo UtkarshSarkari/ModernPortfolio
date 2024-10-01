@@ -5,51 +5,51 @@ import * as motion from "framer-motion/client"
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export default function Contact() {
-  return (
-    <div className='flex items-center justify-center gap-20'>
-        <div className="hidden">
-            <img className='h-[400px] opacity-30' src="/assets/contact.png" alt="" />
-        </div>
-        <div className="w-screen overflow-hidden">
-            <div className="">
-            <motion.div className="">
-                <div className="relative z-50">
-                    <Dock direction="middle">
-                        <DockIcon>
-                            <Icons.gitHub className="size-7" />
-                        </DockIcon>
-                        <DockIcon>
-                            <Icons.linkedin className="" />
-                        </DockIcon>
-                        <DockIcon>
-                            <Icons.code className="" />
-                        </DockIcon>
-                        <DockIcon>
-                            <Icons.mail className="" />
-                        </DockIcon>
-                        <DockIcon>
-                            <Icons.insta className="" />
-                        </DockIcon>
-                        <DockIcon>
-                            <Icons.twitter className="" />
-                        </DockIcon>
-                    </Dock>
+    return (
+        <div className='flex items-center justify-center gap-20'>
+            <div className="hidden">
+                <img className='h-[400px] opacity-30' src="/assets/contact.png" alt="" />
+            </div>
+            <div className="w-screen overflow-hidden">
+                <div className="">
+                    <motion.div className="">
+                        <div className="relative z-50">
+                            <Dock direction="middle">
+                                <DockIcon>
+                                    <Icons.gitHub className="size-7" />
+                                </DockIcon>
+                                <DockIcon>
+                                    <Icons.linkedin />
+                                </DockIcon>
+                                <DockIcon>
+                                    <Icons.code />
+                                </DockIcon>
+                                <DockIcon>
+                                    <Icons.mail />
+                                </DockIcon>
+                                <DockIcon>
+                                    <Icons.insta />
+                                </DockIcon>
+                                <DockIcon>
+                                    <Icons.twitter />
+                                </DockIcon>
+                            </Dock>
+                        </div>
+                    </motion.div>
                 </div>
-            </motion.div>
-            </div>
-            <div className="mt-10 flex flex-col gap-8">
-                <form action="" className='flex flex-col gap-4'>
-                    <div className="flex items-center gap-4">
-                        <input className='bg-white/10 px-4 py-2 rounded-md' type="text" placeholder='Your Name' />
-                        <input className='bg-white/10 px-4 py-2 rounded-md' type="email" placeholder='Your Email' />
-                    </div>
-                    <textarea className='bg-white/10 resize-none rounded-md px-4 py-3' placeholder='Your Message 💬' rows={8} name="" id=""></textarea>
-                </form>
-                <button className='bg-gradient-to-r from-purple-500 to-blue-400 py-2 rounded-md'>Submit</button>
+                <div className="mt-10 flex flex-col gap-8">
+                    <form action="" className='flex flex-col gap-4'>
+                        <div className="flex items-center gap-4">
+                            <input className='bg-white/10 px-4 py-2 rounded-md' type="text" placeholder='Your Name' />
+                            <input className='bg-white/10 px-4 py-2 rounded-md' type="email" placeholder='Your Email' />
+                        </div>
+                        <textarea className='bg-white/10 resize-none rounded-md px-4 py-3' placeholder='Your Message 💬' rows={8} name="" id=""></textarea>
+                    </form>
+                    <button className='bg-gradient-to-r from-purple-500 to-blue-400 py-2 rounded-md'>Submit</button>
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 
@@ -62,17 +62,17 @@ const Icons = {
             ></path>
         </svg>
     ),
-    code: (props: IconProps) => (
+    code: () => (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="visualstudio" height='35' width='35'>
             <path fill='#e8e8e8' d="M28.12 5.8 15.34 18.19l-7.69-5.92-1.65.9v13.66l1.65.9 7.69-5.92L28.12 34.2 34 31.82V8.18ZM8.49 23.18v-6.36L12 20Zm18.65 2.17L20 20l7.14-5.35v10.7Z"></path>
         </svg>
     ),
-    linkedin: (props: IconProps) => (
+    linkedin: () => (
         <svg height='32' width='32' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="linkedin">
             <path fill='#e8e8e8' d="M55.35,44.17h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11ZM50.8,3.77A45.67,45.67,0,1,0,96.47,49.44,45.72,45.72,0,0,0,50.8,3.77ZM39.38,70a.77.77,0,0,1-.77.76h-8.8a.76.76,0,0,1-.76-.76V40.43a.76.76,0,0,1,.76-.77h8.8a.77.77,0,0,1,.77.77ZM33.9,35.71a5.53,5.53,0,1,1,5.53-5.53A5.52,5.52,0,0,1,33.9,35.71ZM76.62,70a.77.77,0,0,1-.77.76h-8.8a.76.76,0,0,1-.76-.76V54.11c0-4.18-1.49-7-5.23-7a5.65,5.65,0,0,0-5.3,3.78,7.12,7.12,0,0,0-.34,2.52V70a.77.77,0,0,1-.77.77h-8.8a.76.76,0,0,1-.76-.77c0-4.22.11-24.71,0-29.53a.76.76,0,0,1,.76-.77h8.78a.76.76,0,0,1,.77.77v3.63a10.26,10.26,0,0,1,9.31-5.13c6.79,0,11.89,4.44,11.89,14Zm-21.2-25.8v-.11l-.07.11Zm-.07,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Zm0,0h.07v-.11Z"></path>
         </svg>
     ),
-    mail: (props: IconProps) => (
+    mail: () => (
         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100" id="email" height='30' width='30'>
             <path fill='#e8e8e8' d="M50,5C25.2,5,5,25.2,5,50c0,24.8,20.2,45,45,45c1.1,0,2-0.9,2-2s-0.9-2-2-2C27.4,91,9,72.6,9,50S27.4,9,50,9s41,18.4,41,41
 	v10c0,5-4,9-9,9s-9-4-9-9V50c0-12.7-10.3-23-23-23c-12.7,0-23,10.3-23,23c0,12.7,10.3,23,23,23c8.1,0,15.1-4.2,19.3-10.4
@@ -81,13 +81,13 @@ const Icons = {
         </svg>
 
     ),
-    insta: (props: IconProps) => (
+    insta: () => (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124" id="instagram" width='35' height='35'>
             <path fill="#e8e8e8" d="M87.2 33.6c-3.1 0-5.6 2.5-5.6 5.6 0 3.1 2.5 5.6 5.6 5.6 3.1 0 5.6-2.5 5.6-5.6 0-3.1-2.5-5.6-5.6-5.6zm-25 7.2c-13 0-23.6 10.6-23.6 23.6S49.2 88 62.2 88s23.6-10.6 23.6-23.6-10.6-23.6-23.6-23.6zm0 38.8c-8.4 0-15.1-6.8-15.1-15.1 0-8.4 6.8-15.1 15.1-15.1 8.4 0 15.1 6.8 15.1 15.1s-6.8 15.1-15.1 15.1zm47.7-34.8C109.9 28.9 97 16 81.1 16H43c-15.9 0-28.8 12.9-28.8 28.8v38.1c0 15.9 12.9 28.8 28.8 28.8h38c15.9 0 28.8-12.9 28.8-28.8V44.8zm-9.1 38c0 10.9-8.9 19.8-19.8 19.8H43c-10.9 0-19.8-8.9-19.8-19.8v-38C23.2 33.8 32 25 43 25h38c10.9 0 19.8 8.9 19.8 19.8v38z"></path>
         </svg>
 
     ),
-    twitter: (props: IconProps) => (
+    twitter: () => (
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" id="x">
             <path fill="#e8e8e8" fill-rule="evenodd" d="M20.7071 4.70711C21.0976 4.31658 21.0976 3.68342 20.7071 3.29289C20.3166 2.90237 19.6834 2.90237 19.2929 3.29289L13.348 9.23779L9.07342 3.40865C8.88504 3.15177 8.58555 3 8.267 3H4C3.62317 3 3.27833 3.21184 3.108 3.54798C2.93766 3.88412 2.97075 4.28747 3.19359 4.59135L9.45538 13.1304L3.29289 19.2929C2.90237 19.6834 2.90237 20.3166 3.29289 20.7071C3.68342 21.0976 4.31658 21.0976 4.70711 20.7071L10.652 14.7622L14.9266 20.5914C15.115 20.8482 15.4145 21 15.733 21H20C20.3768 21 20.7217 20.7882 20.892 20.452C21.0623 20.1159 21.0293 19.7125 20.8064 19.4086L14.5446 10.8696L20.7071 4.70711ZM12.3703 11.2865C12.4012 11.338 12.4371 11.3872 12.4781 11.4336L18.0266 19H16.2398L5.97338 5H7.76026L12.3703 11.2865Z" clip-rule="evenodd"></path>
         </svg>
