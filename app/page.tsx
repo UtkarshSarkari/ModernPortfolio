@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header/header'
 import Home from './Home/home'
 import Experience from './Experience/experience'
-// import Projects from './Projects/Projects'
+import Projects from './Projects/Projects'
 import { Review } from './Reviews/Review'
 // import Skills from './Skills/Skills'
 import Contact from './Contact/Contact'
@@ -15,7 +15,7 @@ export default function App() {
       <div className="pt-20" id='experience'></div>
       <Experience />
       {/* <Quote quote='“Programmer: A machine that turns coffee into code.”' /> */}
-      {/* <Projects /> */}
+      <Projects />
       {/* <Skills /> */}
       <Review />
       <Contact />

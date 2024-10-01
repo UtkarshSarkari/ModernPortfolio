@@ -70,18 +70,18 @@ export default function Projects() {
 
         <div className="relative">
           <div className="relative w-full flex items-center justify-center">
-            <Safari url="magicui.design" className="w-[900px]" />
+            <Safari url="magicui.design" className="w-[350px] sm:w-[900px]" />
             <div
-              className="h-[526px] w-[900px] absolute top-[133px] rounded-b-lg safari"
+              className="h-[210px] sm:h-[526px] w-[350px] sm:w-[900px] absolute top-[281px] sm:top-[133px] rounded-b-lg safari"
               style={{ backgroundImage: `url(${selectedProject.browserImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             />
           </div>
 
-          <div className="absolute top-3.5 -right-24">
+          <div className="absolute top-0 sm:top-3.5 -right-2 sm:-right-24">
             <div className="relative">
-              <Iphone15Pro className="w-[200px]" />
+              <Iphone15Pro className="w-[50px] sm:w-[200px]" />
               <div
-                className="h-[404px] w-[195px] absolute top-[239px] left-[2px] rounded-[32px] phone shadow-2xl shadow-slate-800"
+                className="h-[102px] sm:h-[404px] w-[50px] sm:w-[195px] absolute top-[390px] sm:top-[239px] sm:left-[2px] rounded-[10px] sm:rounded-[32px] phone shadow-2xl shadow-slate-800"
                 style={{ backgroundImage: `url(${selectedProject.phoneImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
               />
             </div>
@@ -90,7 +90,7 @@ export default function Projects() {
 
         {/* Number Selection */}
         <div className="flex items-center justify-center gap-10">
-          <div className="flex items-center justify-center gap-10 -mt-10">
+          <div className="flex items-center justify-center sm:gap-10 -mt-10">
             {numbers.map((num) => (
               <div
                 key={num}
