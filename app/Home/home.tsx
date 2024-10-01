@@ -10,7 +10,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 export default function Home() {
     return (
         <BackgroundLines className='py-20 sm:py-60 flex items-center justify-center flex-col gap-10 sm:gap-16'>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col">
                 <GradualSpacing
                     className="hidden sm:flex font-display text-center text-4xl font-bold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
                     "
