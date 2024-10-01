@@ -10,6 +10,7 @@ import {
   SimpleIcon,
 } from "react-icon-cloud";
 
+// Define cloud properties without children
 export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
     style: {
@@ -37,6 +38,7 @@ export const cloudProps: Omit<ICloud, "children"> = {
   },
 };
 
+// Render a custom icon based on theme
 export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
   const bgHex = theme === "light" ? "#161925" : "#080510";
   const fallbackHex = theme === "light" ? "#161925" : "#ffffff";
@@ -52,7 +54,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
       href: undefined,
       target: undefined,
       rel: undefined,
-      onClick: (e: any) => e.preventDefault(),
+      onClick: (e: React.MouseEvent<HTMLAnchorElement>) => e.preventDefault(),
     },
   });
 };
@@ -80,7 +82,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   }, [data, theme]);
 
   return (
-    // @ts-ignore
+    // @ts-expect-error TypeScript expects a specific prop type for Cloud component
     <Cloud {...cloudProps}>
       <>{renderedIcons}</>
     </Cloud>
