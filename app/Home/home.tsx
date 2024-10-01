@@ -11,13 +11,13 @@ export default function Home() {
     return (
         <BackgroundLines className='py-10 sm:py-60 flex items-center justify-center flex-col gap-10 sm:gap-16'>
             <div className="flex flex-col">
-                <GradualSpacing
+                {/* <GradualSpacing
                     className="hidden sm:flex font-display text-center text-4xl font-bold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
                     "
                     text="Converting Thoughts Into Code."
-                />
+                /> */}
                 {/* <div className="font-bold text-6xl text-center leading-[70px] tracking-wide bg-gradient-to-r from-purple-400 to-blue-200 bg-clip-text text-transparent">Converting Thoughts Into Code</div> */}
-                <GradualSpacing
+                {/* <GradualSpacing
                     className="font-display text-center text-[53px] font-extrabold tracking-[-0.06em] text-transparent bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text md:text-7xl md:leading-[5rem] z-50 text-wrap
                     "
                     text="Converting"
@@ -31,7 +31,8 @@ export default function Home() {
                     className="font-display text-center text-[53px] font-extrabold tracking-[-0.06em] text-transparent bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text md:text-7xl md:leading-[5rem] z-50 text-wrap
                     "
                     text="Into Code"
-                />
+                /> */}
+                <div className="font-extrabold text-5xl tracking-wide text-center leading-[60px] text-transparent bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text">Converting Thoughts Into Code</div>
             </div>
             <FadeText
                 className="text-xl text-white italic text-center flex z-50 font-extrabold"
