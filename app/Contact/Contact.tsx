@@ -6,13 +6,13 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export default function Contact() {
     return (
-        <div className='flex items-center justify-center gap-20'>
-            <div className="hidden sm:flex">
-                <img className='h-[400px] opacity-30' src="/assets/contact.png" alt="" />
+        <div className='flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-20'>
+            <div className="flex">
+                <img className='sm:h-[400px] opacity-30' src="/assets/contact.png" alt="" />
             </div>
-            <div className="w-screen overflow-hidden">
+            <div className="">
                 <div className="">
-                    <motion.div className="">
+                    {/* <motion.div className="">
                         <div className="relative z-50">
                             <Dock direction="middle">
                                 <DockIcon>
@@ -35,17 +35,17 @@ export default function Contact() {
                                 </DockIcon>
                             </Dock>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
-                <div className="mt-10 flex flex-col gap-8 items-center justify-center">
-                    <form action="" className='flex flex-col gap-4'>
-                        <div className="flex items-center gap-4">
+                <div className="sm:mt-10 flex flex-col flex-wrap gap-8 items-center justify-center">
+                    <form action="" className='flex flex-col gap-4 flex-wrap'>
+                        <div className="flex items-center gap-4 flex-wrap">
                             <input className='bg-white/10 px-4 py-2 rounded-md' type="text" placeholder='Your Name' />
                             <input className='bg-white/10 px-4 py-2 rounded-md' type="email" placeholder='Your Email' />
                         </div>
-                        <textarea className='bg-white/10 resize-none rounded-md px-4 py-3' placeholder='Your Message 💬' rows={8} name="" id=""></textarea>
+                        <textarea className='bg-white/10 resize-none rounded-md px-4 py-3 w-full' placeholder='Your Message 💬' rows={8} name="" id=""></textarea>
                     </form>
-                    <button className='bg-gradient-to-r from-purple-500 to-blue-400 py-2 rounded-md w-[440px]'>Submit</button>
+                    <button className='bg-gradient-to-r from-purple-500 to-blue-400 py-2 rounded-md  w-full sm:w-[440px]'>Submit</button>
                 </div>
             </div>
         </div>
