@@ -1,5 +1,5 @@
 import React from 'react'
-// import GradualSpacing from "@/components/magicui/gradual-spacing";
+import GradualSpacing from "@/components/magicui/gradual-spacing";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { FadeText } from "@/components/magicui/fade-text";
 import { BackgroundLines } from "@/components/ui/background-lines";
@@ -11,11 +11,11 @@ export default function Home() {
     return (
         <BackgroundLines className='py-10 sm:py-60 flex items-center justify-center flex-col gap-10 sm:gap-16'>
             <div className="flex flex-col">
-                {/* <GradualSpacing
+                <GradualSpacing
                     className="hidden sm:flex font-display text-center text-4xl font-bold tracking-[-0.06em] text-white/90 md:text-7xl md:leading-[5rem] z-50 text-wrap
                     "
                     text="Converting Thoughts Into Code."
-                /> */}
+                />
                 {/* <div className="font-bold text-6xl text-center leading-[70px] tracking-wide bg-gradient-to-r from-purple-400 to-blue-200 bg-clip-text text-transparent">Converting Thoughts Into Code</div> */}
                 {/* <GradualSpacing
                     className="font-display text-center text-[53px] font-extrabold tracking-[-0.06em] text-transparent bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text md:text-7xl md:leading-[5rem] z-50 text-wrap
@@ -32,10 +32,10 @@ export default function Home() {
                     "
                     text="Into Code"
                 /> */}
-                <div className="font-extrabold text-5xl tracking-wide text-center leading-[60px] text-transparent bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text">Converting Thoughts Into Code</div>
+                <div className="font-extrabold text-5xl tracking-wide leading-[60px] text-transparent bg-gradient-to-r from-purple-400 to-blue-300 bg-clip-text sm:hidden">Converting Thoughts Into Code</div>
             </div>
             <FadeText
-                className="text-xl text-white italic text-center flex z-50 font-extrabold"
+                className="text-xl text-white italic sm:text-center flex z-50 font-extrabold"
                 direction="up"
                 framerProps={{
                     show: { transition: { delay: 1.6, duration: 1 } },
