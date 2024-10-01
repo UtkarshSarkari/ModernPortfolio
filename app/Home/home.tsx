@@ -1,5 +1,5 @@
 import React from 'react'
-import GradualSpacing from "@/components/magicui/gradual-spacing";
+// import GradualSpacing from "@/components/magicui/gradual-spacing";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { FadeText } from "@/components/magicui/fade-text";
 import { BackgroundLines } from "@/components/ui/background-lines";
