@@ -72,16 +72,16 @@ export default function Projects() {
           <div className="relative w-full flex items-center justify-center">
             <Safari url="magicui.design" className="w-[350px] sm:w-[900px]" />
             <div
-              className="h-[210px] sm:h-[526px] w-[350px] sm:w-[900px] absolute top-[281px] sm:top-[133px] rounded-b-lg safari"
+              className="h-[260px] sm:h-[526px] w-[350px] sm:w-[900px] absolute top-[281px] sm:top-[133px] rounded-b-lg safari"
               style={{ backgroundImage: `url(${selectedProject.browserImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             />
           </div>
 
-          <div className="absolute top-0 sm:top-3.5 -right-2 sm:-right-24">
+          <div className="absolute top-4 sm:top-3.5 -right-2 sm:-right-24">
             <div className="relative">
-              <Iphone15Pro className="w-[50px] sm:w-[200px]" />
+              <Iphone15Pro className="w-[80px] sm:w-[200px]" />
               <div
-                className="h-[102px] sm:h-[404px] w-[50px] sm:w-[195px] absolute top-[390px] sm:top-[239px] sm:left-[2px] rounded-[10px] sm:rounded-[32px] phone shadow-2xl shadow-slate-800"
+                className="h-[162px] sm:h-[404px] w-[78px] sm:w-[195px] absolute top-[360px] sm:top-[239px] left-[1px] sm:left-[2px] rounded-[13px] sm:rounded-[32px] phone shadow-2xl shadow-slate-800"
                 style={{ backgroundImage: `url(${selectedProject.phoneImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
               />
             </div>
@@ -90,7 +90,7 @@ export default function Projects() {
 
         {/* Number Selection */}
         <div className="flex items-center justify-center gap-10">
-          <div className="flex items-center justify-center gap-4 sm:gap-10 -mt-96 sm:-mt-10">
+          <div className="flex items-center justify-center gap-4 sm:gap-10 -mt-80 sm:-mt-10">
             {numbers.map((num) => (
               <div
                 key={num}
@@ -107,7 +107,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="-mt-32 sm:mt-10 flex items-center justify-center">
+        <div className="-mt-28 sm:mt-10 flex items-center justify-center">
           <Modal>
             <ModalTrigger className="bg-white text-black flex justify-center group/modal-btn tracking-widest">
               <span className="group-hover/modal-btn:translate-x-96 text-center transition duration-500 tracking-widest">
